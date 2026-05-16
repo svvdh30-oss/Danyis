@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+<title>Para Danyis 💕</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --rosa1:#ffd6ec;
+    --rosa2:#ffc2e2;
+    --rosa3:#ffe8f4;
+    --rosa4:#ff9fcd;
+    --oscuro:#5e2f4d;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+    height:100%;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top,#ffd9ee,#ffb6da 70%);
+
+    overflow:hidden;
+
+    min-height:100vh;
+    min-height:-webkit-fill-available;
+
+    color:white;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+/* ================================================= */
+/* FONDO */
+/* ================================================= */
+
+#fondo{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    z-index:1;
+}
+
+.particula{
+
+    position:absolute;
+
+    pointer-events:none;
+
+    animation:caer linear infinite;
+
+    text-shadow:
+    0 0 10px rgba(255,255,255,.8),
+    0 0 20px rgba(255,255,255,.5);
+}
+
+@keyframes caer{
+
+    from{
+        transform:
+        translateY(-20vh)
+        rotate(0deg);
+    }
+
+    to{
+        transform:
+        translateY(120vh)
+        rotate(360deg);
+    }
+}
+
+/* ================================================= */
+/* CONTENEDOR */
+/* ================================================= */
+
+.container{
+
+    position:relative;
+
+    z-index:10;
+
+    width:95%;
+
+    max-width:480px;
+
+    min-height:96vh;
+
+    height:96vh;
+
+    margin:auto;
+
+    margin-top:2vh;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    border-radius:35px;
+
+    background:
+    rgba(255,255,255,.12);
+
+    -webkit-backdrop-filter:blur(18px);
+    backdrop-filter:blur(18px);
+
+    border:
+    1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 10px 60px rgba(0,0,0,.25),
+    0 0 30px rgba(255,182,218,.45);
+}
+
+/* ================================================= */
+/* SLIDES */
+/* ================================================= */
+
+.slide{
+
+    position:absolute;
+    width:100%;
+
+    inset:0;
+
+    min-height:100%;
+
+    height:100%;
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+    opacity:0;
+
+    pointer-events:none;
+
+    transform:
+    scale(.96)
+    translateY(20px);
+
+    transition:.9s ease;
+
+    overflow-y:auto;
+
+    overflow-x:hidden;
+
+    padding-bottom:140px;
+}
+
+.slide.active{
+
+    opacity:1;
+
+    pointer-events:auto;
+
+    transform:
+    scale(1)
+    translateY(0);
+}
+
+/* ================================================= */
+/* INTRO */
+/* ================================================= */
+
+.intro-card{
+
+    margin:auto;
+
+    padding:40px 25px;
+
+    border-radius:30px;
+
+    background:
+    rgba(255,255,255,.14);
+
+    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(20px);
+
+    border:
+    1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 0 40px rgba(255,182,218,.45);
+
+    animation:palpitar 2.5s infinite;
+}
+
+@keyframes palpitar{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.03);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+.cartaInicio{
+
+    width:270px;
+
+    margin-bottom:25px;
+
+    filter:
+    drop-shadow(0 0 25px rgba(255,255,255,.7));
+
+    animation:
+    flotarCarta 3s ease-in-out infinite;
+}
+
+@keyframes flotarCarta{
+
+    0%{
+        transform:
+        translateY(0px)
+        rotate(-2deg);
+    }
+
+    50%{
+        transform:
+        translateY(-12px)
+        rotate(2deg);
+    }
+
+    100%{
+        transform:
+        translateY(0px)
+        rotate(-2deg);
+    }
+}
+
+/* ================================================= */
+/* FOTOS */
+/* ================================================= */
+
+.marco{
+
+    width:100%;
+
+    margin-bottom:28px;
+
+    border-radius:32px;
+
+    overflow:visible;
+
+    background:
+    rgba(255,255,255,.15);
+
+    border:
+    3px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 0 35px rgba(255,182,218,.35);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:10px;
+}
+
+.marco img{
+
+    width:auto;
+
+    height:auto;
+
+    max-width:100%;
+
+    max-height:75vh;
+
+    object-fit:contain;
+
+    border-radius:24px;
+
+    display:block;
+
+    margin:auto;
+}
+
+/* ================================================= */
+/* TEXTOS */
+/* ================================================= */
+
+h1{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:58px;
+
+    color:white;
+
+    margin-bottom:18px;
+
+    text-shadow:
+    0 0 18px rgba(255,255,255,.55);
+}
+
+.texto{
+
+    font-size:16px;
+
+    line-height:2.1;
+
+    opacity:.97;
+}
+
+/* ================================================= */
+/* SOBRE */
+/* ================================================= */
+
+.sobreBox{
+
+    margin-top:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+
+.sobre{
+
+    width:260px;
+
+    height:180px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #fff0f7,
+    #ffd6ea
+    );
+
+    position:relative;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    box-shadow:
+    0 10px 35px rgba(255,182,218,.55);
+
+    transition:.5s;
+}
+
+.sobre:hover{
+    transform:scale(1.04);
+}
+
+.sobre::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+    height:0;
+
+    border-left:130px solid transparent;
+    border-right:130px solid transparent;
+    border-top:95px solid #ffc4df;
+}
+
+.sobre::after{
+
+    content:"💌";
+
+    position:absolute;
+
+    font-size:55px;
+
+    top:55px;
+    left:100px;
+}
+
+.sobreTexto{
+
+    margin-top:20px;
+
+    color:white;
+
+    font-size:18px;
+
+    line-height:1.8;
+}
+
+.pruebaImg{
+
+    display:none;
+
+    width:100%;
+
+    animation:aparecer .8s ease;
+}
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:scale(.8);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+/* ================================================= */
+/* CARTA */
+/* ================================================= */
+
+.carta{
+
+    width:100%;
+
+    position:relative;
+
+    background:
+    linear-gradient(
+    135deg,
+    rgba(255,255,255,.98),
+    rgba(255,240,247,.98)
+    );
+
+    color:#6b3c56;
+
+    padding:34px;
+
+    border-radius:30px;
+
+    text-align:left;
+
+    line-height:2.3;
+
+    margin-top:10px;
+
+    border-left:
+    6px solid var(--rosa4);
+
+    box-shadow:
+    inset 0 0 25px rgba(255,255,255,.5),
+    inset 0 0 8px rgba(0,0,0,.05),
+    0 10px 30px rgba(0,0,0,.18),
+    0 0 25px rgba(255,182,218,.28);
+
+    font-family:
+    'Great Vibes',cursive;
+
+    font-size:33px;
+}
+
+.pregunta{
+
+    display:block;
+
+    margin-top:30px;
+
+    text-align:center;
+
+    font-size:42px;
+
+    color:#ff6fad;
+}
+
+/* ================================================= */
+/* BOTONES */
+/* ================================================= */
+
+.botones{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-top:30px;
+
+    min-height:160px;
+
+    position:relative;
+}
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    width:160px;
+
+    height:58px;
+
+    border-radius:50px;
+
+    font-size:15px;
+
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.btn{
+
+    background:
+    linear-gradient(
+    45deg,
+    #c95b93,
+    #8b3f67
+    );
+
+    color:white;
+
+    box-shadow:
+    0 5px 25px rgba(139,63,103,.45);
+
+}
+
+.btn:hover{
+
+    transform:scale(1.05);
+
+    background:
+    linear-gradient(
+    45deg,
+    #d86aa3,
+    #9c4b76
+    );
+
+}
+
+#btnNo{
+
+    background:
+    linear-gradient(
+    45deg,
+    #fff0f7,
+    #ffd6ec
+    );
+
+    color:#6b3c56;
+
+    position:relative;
+}
+
+/* ================================================= */
+/* CORAZON */
+/* ================================================= */
+
+.indicacion{
+
+    margin-top:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+}
+
+.indicacion p{
+
+    color:white;
+
+    font-size:16px;
+
+    line-height:1.8;
+}
+
+.flecha{
+
+    font-size:40px;
+
+    color:white;
+
+    animation:mover 1s infinite;
+}
+
+@keyframes mover{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+#heartBeat{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:55px;
+
+    margin-top:10px;
+
+    cursor:pointer;
+
+    background:
+    radial-gradient(circle,
+    rgba(255,183,232,.55),
+    rgba(255,214,236,.25));
+
+    box-shadow:
+    0 0 35px rgba(255,183,232,.7);
+}
+
+.latido{
+    animation:latido .7s infinite;
+}
+
+@keyframes latido{
+
+    0%{
+        transform:scale(1);
+    }
+
+    25%{
+        transform:scale(1.15);
+    }
+
+    50%{
+        transform:scale(1);
+    }
+
+    75%{
+        transform:scale(1.12);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+}
+
+/* ================================================= */
+/* CHISPAS */
+/* ================================================= */
+
+.chispa{
+
+    position:fixed;
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+    animation:explosion 1.2s linear forwards;
+}
+
+@keyframes explosion{
+
+    from{
+        transform:
+        translate(0,0)
+        scale(1);
+
+        opacity:1;
+    }
+
+    to{
+        transform:
+        translate(var(--x),var(--y))
+        scale(0);
+
+        opacity:0;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<audio id="musica" loop playsinline webkit-playsinline>
+<source src="https://media.vocaroo.com/mp3/15tOuJsfrer4" type="audio/mpeg">
+</audio>
+
+<div id="fondo"></div>
+
+<div class="container">
+
+<!-- INTRO -->
+
+<section class="slide active">
+
+<div class="intro-card">
+
+<img
+class="cartaInicio"
+src="https://i.postimg.cc/HxrWYtcm/carta-jpg-removebg-preview.png">
+
+<h1>
+Tengo algo importante para ti 💕
+</h1>
+
+<p class="texto">
+Quiero enseñarte algo
+que significa muchísimo para mí ✨
+</p>
+
+<br>
+
+<button class="btn next">
+Abrir 💌
+</button>
+
+</div>
+
+</section>
+
+<!-- FOTO 1 -->
+
+<section class="slide">
+
+<div class="marco">
+
+<img src="https://github.com/svvdh30-oss/Danyis/blob/main/foto%20v1.jpeg?raw=true">
+
+</div>
+
+<h1>Desde hace años 💕</h1>
+
+<p class="texto">
+
+A veces veo esta foto
+y me doy cuenta
+de cuánto tiempo
+hemos compartido juntas.
+
+<br><br>
+
+Literalmente hemos crecido
+viendo cómo cambia nuestra vida,
+cómo pasan los años
+y cómo cada etapa
+trae cosas nuevas.
+
+<br><br>
+
+Y aunque muchas cosas
+han cambiado con el tiempo,
+hay personas
+que simplemente siguen ahí.
+
+<br><br>
+
+Tú eres una de esas personas.
+
+<br><br>
+
+Porque incluso cuando pasan semanas,
+cuando estamos ocupadas
+o cuando cada una anda en lo suyo,
+sigues formando parte
+de mi vida de una manera importante.
+
+<br><br>
+
+Y sinceramente,
+creo que pocas personas
+logran quedarse tantos años
+sin perder ese cariño bonito 💕
+
+</p>
+
+<button class="btn next">
+Seguir ➜
+</button>
+
+</section>
+
+<!-- FOTO 2 -->
+
+<section class="slide">
+
+<div class="marco">
+
+<img src="https://github.com/svvdh30-oss/Danyis/blob/main/foto%20v2.jpeg?raw=true">
+
+</div>
+
+<h1>Muchos recuerdos 💕</h1>
+
+<p class="texto">
+
+Hemos pasado por muchísimas cosas.
+
+<br><br>
+
+Momentos graciosos,
+momentos raros,
+salidas,
+locuras,
+conversaciones largas
+y recuerdos
+que todavía me hacen sonreír.
+
+<br><br>
+
+Y aunque tal vez
+no siempre soy la persona
+más expresiva del mundo,
+quiero que sepas
+que sí valoro muchísimo
+a las personas
+que permanecen conmigo.
+
+<br><br>
+
+Porque hoy en día
+no es tan fácil
+encontrar gente
+que siga presente
+con el paso del tiempo.
+
+<br><br>
+
+Y tú has sido
+una de esas personas
+que simplemente
+nunca desaparecieron 💕
+
+</p>
+
+<button class="btn next">
+Seguir ➜
+</button>
+
+</section>
+
+<!-- FOTO 3 -->
+
+<section class="slide">
+
+<div class="marco">
+
+<img src="https://github.com/svvdh30-oss/Danyis/blob/main/foto%203.jpeg?raw=true">
+
+</div>
+
+<h1>Una etapa nueva 💕</h1>
+
+<p class="texto">
+
+Últimamente
+han pasado muchas cosas
+en mi vida.
+
+<br><br>
+
+Cosas bonitas,
+cosas inesperadas
+y momentos
+que sinceramente
+jamás imaginé vivir tan pronto.
+
+<br><br>
+
+Y aunque todavía
+estoy procesando muchas emociones,
+también me siento feliz
+de poder compartir
+algo tan importante
+con personas especiales.
+
+<br><br>
+
+Porque hay noticias
+que cambian completamente
+la manera
+en la que ves el futuro.
+
+<br><br>
+
+Y esta es una de ellas 💕
+
+</p>
+
+<button class="btn next">
+Seguir ➜
+</button>
+
+</section>
+
+<!-- SOBRE -->
+
+<section class="slide">
+
+<h1>Tengo algo que mostrarte 💌</h1>
+
+<div class="sobreBox">
+
+<div class="sobre" id="abrirSobre"></div>
+
+<p class="sobreTexto">
+
+Presiona el sobre 💕<br>
+quiero enseñarte algo importante ✨
+
+</p>
+
+</div>
+
+<div class="marco pruebaImg" id="imagenPrueba">
+
+<img src="https://github.com/svvdh30-oss/Danyis/blob/main/Pruebas.jpeg?raw=true">
+
+</div>
+
+<button class="btn next" id="btnContinuar" style="display:none;">
+Seguir ➜
+</button>
+
+</section>
+
+<!-- ECO -->
+
+<section class="slide">
+
+<div class="marco">
+
+<img src="https://github.com/svvdh30-oss/Danyis/blob/main/eco%20ft.jpeg?raw=true">
+
+</div>
+
+<h1>👣💕</h1>
+
+<p class="texto">
+
+Sí…
+
+Estoy embarazada 💕
+
+<br><br>
+
+Todavía me cuesta creerlo
+cada vez que lo digo.
+
+<br><br>
+
+Es una etapa
+completamente nueva para mí,
+llena de emociones,
+nervios
+y muchísima ilusión.
+
+<br><br>
+
+Y sinceramente,
+quería que supieras esto
+de una manera especial.
+
+<br><br>
+
+Porque eres alguien
+que ha formado parte
+de muchos momentos importantes
+de mi vida.
+
+</p>
+
+<button class="btn next">
+Seguir ➜
+</button>
+
+</section>
+
+<!-- CORAZON -->
+
+<section class="slide">
+
+<h1>Su corazoncito 👣</h1>
+
+<p class="texto">
+
+Hace poco
+también pude escuchar
+su corazoncito por primera vez 💕
+
+<br><br>
+
+Y fue uno de esos momentos
+que jamás voy a olvidar.
+
+<br><br>
+
+Es algo tan pequeñito,
+pero al mismo tiempo
+se siente tan enorme.
+
+<br><br>
+
+Todavía me emociono
+cada vez que vuelvo
+a escucharlo.
+
+</p>
+
+<div class="indicacion">
+
+<p>
+
+Si quieres escuchar
+el corazoncito del bebé 💕
+
+<br>
+
+dale aquí abajo ✨
+
+</p>
+
+<div class="flecha">
+⬇
+</div>
+
+</div>
+
+<div id="heartBeat">
+💕
+</div>
+
+<audio id="audioBebe">
+<source src="https://media.vocaroo.com/mp3/1kZsZe2cazIA" type="audio/mpeg">
+</audio>
+
+<br><br>
+
+<button class="btn next">
+Seguir ➜
+</button>
+
+</section>
+
+<!-- CARTA -->
+
+<section class="slide">
+
+<div class="carta">
+
+<p><strong>Danyis 💕</strong></p>
+
+<br>
+
+<p>
+
+Quería contarte esto
+de una manera especial,
+porque sinceramente
+no quería simplemente
+mandarte un mensaje
+y ya.
+
+</p>
+
+<br>
+
+<p>
+
+Han pasado muchos años
+desde que nos conocemos,
+y aunque seguramente
+hemos cambiado muchísimo,
+hay personas
+que siguen formando parte
+de nuestra vida
+sin importar cuánto pase el tiempo.
+
+</p>
+
+<br>
+
+<p>
+
+Y tú eres una de esas personas.
+
+</p>
+
+<br>
+
+<p>
+
+Hemos compartido
+muchos momentos,
+muchísimas risas,
+recuerdos bonitos,
+momentos raros
+y etapas completamente distintas.
+
+</p>
+
+<br>
+
+<p>
+
+Y aunque yo normalmente
+sea reservada
+y no siempre cuente
+todo lo que me pasa,
+hay noticias
+que simplemente
+quieres compartir
+con personas importantes.
+
+</p>
+
+<br>
+
+<p>
+
+Esta fue una de ellas.
+
+</p>
+
+<br>
+
+<p>
+
+Porque desde que supe
+que venía un bebé en camino,
+también pensé
+en todas las personas
+que quiero cerca
+durante esta etapa.
+
+</p>
+
+<br>
+
+<p>
+
+Y obviamente,
+tú apareciste ahí.
+
+</p>
+
+<br>
+
+<p>
+
+No porque hablemos
+todos los días
+de sentimientos
+o porque yo sea
+la persona más abierta del mundo,
+sino porque has sido
+parte de mi vida
+durante muchísimo tiempo.
+
+</p>
+
+<br>
+
+<p>
+
+Y eso también significa mucho para mí.
+
+</p>
+
+<br>
+
+<p>
+
+La verdad,
+todavía me cuesta imaginar
+cómo será todo esto.
+
+</p>
+
+<br>
+
+<p>
+
+Pensar que ahora
+voy a convertirme
+en mamá
+se siente demasiado irreal.
+
+</p>
+
+<br>
+
+<p>
+
+Pero también me emociona
+imaginar todas las personas bonitas
+que rodearán a mi bebé.
+
+</p>
+
+<br>
+
+<p>
+
+Y sinceramente,
+me haría muy feliz
+que tú fueras una de ellas 💕
+
+</p>
+
+<br>
+
+<p>
+
+Porque sé
+que con el tiempo
+también vas a querer muchísimo
+a este bebé.
+
+</p>
+
+<br>
+
+<p>
+
+Y porque después
+de tantos años,
+me gusta pensar
+que todavía quedan
+muchos recuerdos bonitos
+por vivir 💕
+
+</p>
+
+<br>
+
+<span class="pregunta">
+
+¿Aceptarías ser
+la tía
+de mi bebé? 👣💕
+
+</span>
+
+</div>
+
+<div class="botones">
+
+<button class="btn" id="btnSi">
+¡SÍ ACEPTO! 💕
+</button>
+
+<button id="btnNo">
+NO 😭
+</button>
+
+</div>
+
+</section>
+
+</div>
+
+<script>
+
+const musica =
+document.getElementById("musica");
+
+const slides =
+document.querySelectorAll(".slide");
+
+let actual = 0;
+
+document
+.querySelectorAll(".next")
+.forEach(btn=>{
+
+function avanzar(){
+
+try{
+musica.play();
+}catch(e){}
+
+slides[actual]
+.classList.remove("active");
+
+actual++;
+
+slides[actual]
+.classList.add("active");
+
+}
+
+btn.addEventListener("click", avanzar);
+
+});
+
+const fondo =
+document.getElementById("fondo");
+
+const simbolos = [
+"✨",
+"💕",
+"🌸",
+"💌",
+"🤍",
+"🩷"
+];
+
+for(let i=0;i<100;i++){
+
+const p =
+document.createElement("div");
+
+p.classList.add("particula");
+
+p.innerHTML =
+simbolos[
+Math.floor(Math.random()*simbolos.length)
+];
+
+p.style.left =
+Math.random()*100+"vw";
+
+p.style.fontSize =
+(Math.random()*28+16)+"px";
+
+p.style.animationDuration =
+(Math.random()*6+5)+"s";
+
+p.style.animationDelay =
+Math.random()*5+"s";
+
+fondo.appendChild(p);
+
+}
+
+const heart =
+document.getElementById("heartBeat");
+
+const audioBebe =
+document.getElementById("audioBebe");
+
+heart.addEventListener("click",()=>{
+
+audioBebe.play();
+
+heart.classList.add("latido");
+
+});
+
+audioBebe.addEventListener("ended",()=>{
+
+heart.classList.remove("latido");
+
+});
+
+/* SOBRE */
+
+const sobre =
+document.getElementById("abrirSobre");
+
+const imgPrueba =
+document.getElementById("imagenPrueba");
+
+const btnContinuar =
+document.getElementById("btnContinuar");
+
+sobre.addEventListener("click",()=>{
+
+sobre.style.display = "none";
+
+imgPrueba.style.display = "flex";
+
+btnContinuar.style.display = "block";
+
+for(let i=0;i<80;i++){
+
+const chispa =
+document.createElement("div");
+
+chispa.classList.add("chispa");
+
+chispa.style.left =
+(window.innerWidth/2)+"px";
+
+chispa.style.top =
+(window.innerHeight/2)+"px";
+
+chispa.style.background =
+`hsl(${Math.random()*50+310},100%,75%)`;
+
+chispa.style.setProperty(
+'--x',
+(Math.random()*600-300)+'px'
+);
+
+chispa.style.setProperty(
+'--y',
+(Math.random()*600-300)+'px'
+);
+
+document.body.appendChild(chispa);
+
+setTimeout(()=>{
+chispa.remove();
+},1200);
+
+}
+
+});
+
+/* BOTON NO */
+
+const btnNo =
+document.getElementById("btnNo");
+
+const contenedorBotones =
+document.querySelector(".botones");
+
+btnNo.addEventListener("click",()=>{
+
+const maxX = 180;
+const maxY = 60;
+
+const randomX =
+Math.random() * maxX - 90;
+
+const randomY =
+Math.random() * maxY - 30;
+
+btnNo.style.transform =
+`translate(${randomX}px, ${randomY}px)`;
+
+});
+
+/* SI */
+
+document
+.getElementById("btnSi")
+.addEventListener("click",()=>{
+
+for(let i=0;i<120;i++){
+
+const chispa =
+document.createElement("div");
+
+chispa.classList.add("chispa");
+
+chispa.style.left =
+Math.random()*window.innerWidth+"px";
+
+chispa.style.top =
+Math.random()*window.innerHeight+"px";
+
+chispa.style.background =
+`hsl(${Math.random()*50+310},100%,75%)`;
+
+chispa.style.setProperty(
+'--x',
+(Math.random()*400-200)+'px'
+);
+
+chispa.style.setProperty(
+'--y',
+(Math.random()*400-200)+'px'
+);
+
+document.body.appendChild(chispa);
+
+setTimeout(()=>{
+chispa.remove();
+},1200);
+
+}
+
+setTimeout(()=>{
+
+alert(`💕 Sabía que dirías que sí...
+
+Mi bebé oficialmente
+tendrá a una tía
+demasiado especial 👣✨`);
+
+},500);
+
+});
+
+</script>
+
+</body>
+</html>
